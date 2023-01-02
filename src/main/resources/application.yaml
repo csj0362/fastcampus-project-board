@@ -24,9 +24,10 @@ spring:
       hibernate.default_batch_fetch_size: 100
       #hibernate.globally_quoted_identifiers: true
       #hibernate.globally_quoted_identifiers_skip_column_definitions: true
-  h2.console.enabled: true
   sql.init.mode: always
 
+server:
+  port: 8081
 
 ---
 
