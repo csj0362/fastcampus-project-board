@@ -25,7 +25,9 @@ spring:
       #hibernate.globally_quoted_identifiers: true
       #hibernate.globally_quoted_identifiers_skip_column_definitions: true
   sql.init.mode: always
-
+  data.rest:
+    base-path: /api
+    detection-strategy: annotated
 server:
   port: 8081
 
