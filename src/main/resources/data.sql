@@ -2002,3 +2002,12 @@ insert into article_comment (content, created_by, modified_by, created_at, modif
 insert into article_comment (content, created_by, modified_by, created_at, modified_at, article_id) values ('Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 'Luciano', 'Teddy', '2022-07-19 23:46:44', '2022-06-19 10:32:32', 998);
 insert into article_comment (content, created_by, modified_by, created_at, modified_at, article_id) values ('Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'Skipper', 'Neall', '2022-05-21 04:34:54', '2022-03-19 07:10:08', 999);
 insert into article_comment (content, created_by, modified_by, created_at, modified_at, article_id) values ('Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'Ilise', 'Drake', '2022-08-23 05:30:47', '2022-07-17 09:58:02', 1000);
+
+-- 테스트 계정
+-- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('csj', '{noop}asdf1234', 'Csj', 'csj@mail.com', 'I am CSJ.', now(), 'csj', now(), 'csj')
+;
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('csj2', '{noop}asdf1234', 'Csj2', 'csj2@mail.com', 'I am CSJ2.', now(), 'csj2', now(), 'csj2')
+;
